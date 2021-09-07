@@ -150,8 +150,8 @@
           "category": "Adafruit",
           "url": "https://github.com/ksfreitas/adafruit-ublox-nrf52-arduino/raw/main/release/adafruit-ublox-nrf52-arduino-1.0.0.zip",
           "archiveFileName": "adafruit-ublox-nrf52-arduino-1.0.0.zip",
-          "checksum": "SHA-256:52bf96559aed48de203db8209d730c5c7a7e9f19350302376df002b24d4aa3fe",
-          "size": "21884482",
+          "checksum": "SHA-256:404c705ca7deb7c3c0efcef03bd45a5ac84d8012da00cebd74f1384af35f69ed",
+          "size": "21851509",
           "help": {
             "online": "https://forums.adafruit.com"
           },
