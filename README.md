@@ -2,7 +2,7 @@
 
 Based on Adafruit official library and tutorial: https://nina-b302-arduino-adafruit.blogspot.com/2020/04/nina-b302-e-arduino-adafruit.html
 
-## Supported boards
+## Currently supported boards
 
 * NINA 302
 
