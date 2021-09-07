@@ -1,0 +1,115 @@
+# Copyright (c) 2014-2015 Arduino LLC.  All right reserved.
+# Copyright (c) 2016 Sandeep Mistry All right reserved.
+# Copyright (c) 2017 Adafruit Industries.  All right reserved.
+#
+# This library is free software; you can redistribute it and/or
+# modify it under the terms of the GNU Lesser General Public
+# License as published by the Free Software Foundation; either
+# version 2.1 of the License, or (at your option) any later version.
+#
+# This library is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+# See the GNU Lesser General Public License for more details.
+#
+# You should have received a copy of the GNU Lesser General Public
+# License along with this library; if not, write to the Free Software
+# Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+
+menu.softdevice=Bootloader
+menu.debug=Debug
+
+# ----------------------------------
+# NINA B302
+# ----------------------------------
+ninab302.name=NINA B302
+
+# VID/PID for bootloader with/without UF2, Arduino + Circuitpython App
+ninab302.vid.0=0x239A
+ninab302.pid.0=0x8029
+ninab302.vid.1=0x239A
+ninab302.pid.1=0x0029
+ninab302.vid.2=0x7239A
+ninab302.pid.2=0x002A
+ninab302.vid.3=0x239A
+ninab302.pid.3=0x802A
+
+# Upload
+ninab302.bootloader.tool=bootburn
+ninab302.upload.tool=nrfutil
+ninab302.upload.protocol=nrfutil
+ninab302.upload.use_1200bps_touch=true
+ninab302.upload.wait_for_upload_port=true
+ninab302.upload.maximum_size=815104
+ninab302.upload.maximum_data_size=237568
+
+# Build
+ninab302.build.mcu=cortex-m4
+ninab302.build.f_cpu=64000000
+ninab302.build.board=NINA_B302_ublox
+ninab302.build.core=nRF5
+ninab302.build.variant=NINA_B302_ublox
+ninab302.build.usb_manufacturer="Nordic"
+ninab302.build.usb_product="NINA B302 ublox"
+ninab302.build.extra_flags=-DNRF52840_XXAA -DNINA_B302_ublox {build.flags.usb}
+ninab302.build.ldscript=nrf52840_s140_v6.ld
+ninab302.build.vid=0x239A
+ninab302.build.pid=0x8029
+
+# SofDevice Menu
+ninab302.menu.softdevice.s140v6=0.3.2 SoftDevice s140 6.1.1
+ninab302.menu.softdevice.s140v6.build.sd_name=s140
+ninab302.menu.softdevice.s140v6.build.sd_version=6.1.1
+ninab302.menu.softdevice.s140v6.build.sd_fwid=0x00B6
+
+# Debug Menu
+ninab302.menu.debug.l0=Level 0 (Release)
+ninab302.menu.debug.l0.build.debug_flags=-DCFG_DEBUG=0
+ninab302.menu.debug.l1=Level 1 (Error Message)
+ninab302.menu.debug.l1.build.debug_flags=-DCFG_DEBUG=1
+ninab302.menu.debug.l2=Level 2 (Full Debug)
+ninab302.menu.debug.l2.build.debug_flags=-DCFG_DEBUG=2
+ninab302.menu.debug.l3=Level 3 (Segger SystemView)
+ninab302.menu.debug.l3.build.debug_flags=-DCFG_DEBUG=3
+ninab302.menu.debug.l3.build.sysview_flags=-DCFG_SYSVIEW=1
+
+# ----------------------------------
+# NINA B112
+# ----------------------------------
+ninab112.name=NINA B112
+ninab112.bootloader.tool=bootburn
+
+# Upload
+ninab112.upload.tool=nrfutil
+ninab112.upload.protocol=nrfutil
+ninab112.upload.use_1200bps_touch=false
+ninab112.upload.wait_for_upload_port=false
+ninab112.upload.native_usb=false
+ninab112.upload.maximum_size=290816
+ninab112.upload.maximum_data_size=52224
+
+# Build
+ninab112.build.mcu=cortex-m4
+ninab112.build.f_cpu=64000000
+ninab112.build.board=NINA_B112_ublox
+ninab112.build.core=nRF5
+ninab112.build.variant=NINA_B112_ublox
+ninab112.build.extra_flags=-DNRF52832_XXAA -DNINA_B112_ublox -DNRF52
+ninab112.build.ldscript=nrf52832_s132_v6.ld
+
+# SofDevice Menu
+ninab112.menu.softdevice.s132v6=0.3.2 SoftDevice s132 6.1.1
+ninab112.menu.softdevice.s132v6.build.sd_name=s132
+ninab112.menu.softdevice.s132v6.build.sd_version=6.1.1
+ninab112.menu.softdevice.s132v6.build.sd_fwid=0x00B7
+
+# Debug Menu
+ninab112.menu.debug.l0=Level 0 (Release)
+ninab112.menu.debug.l0.build.debug_flags=-DCFG_DEBUG=0
+ninab112.menu.debug.l1=Level 1 (Error Message)
+ninab112.menu.debug.l1.build.debug_flags=-DCFG_DEBUG=1
+ninab112.menu.debug.l2=Level 2 (Full Debug)
+ninab112.menu.debug.l2.build.debug_flags=-DCFG_DEBUG=2
+ninab112.menu.debug.l3=Level 3 (Segger SystemView)
+ninab112.menu.debug.l3.build.debug_flags=-DCFG_DEBUG=3
+ninab112.menu.debug.l3.build.sysview_flags=-DCFG_SYSVIEW=1
