@@ -32,7 +32,7 @@
             {
               "packager": "adafruit",
               "name": "nrfjprog",
-              "version": "9.4.0",
+              "version": "9.4.0"
             },
             {
               "packager": "arduino",
