@@ -1,7 +1,7 @@
 {
   "packages": [
     {
-      "name": "adafruit-ublox-nrf52-arduino",
+      "name": "AdafruitUbloxNrf52",
       "websiteURL": "https://github.com/ksfreitas/adafruit-ublox-nrf52-arduino",
       "platforms": [
         {
