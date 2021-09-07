@@ -164,17 +164,17 @@
           ],
           "toolsDependencies": [
             {
-              "packager": "adafruit",
+              "packager": "AdafruitUbloxNrf52",
               "name": "arm-none-eabi-gcc",
               "version": "9-2019q4"
             },
             {
-              "packager": "adafruit",
+              "packager": "AdafruitUbloxNrf52",
               "name": "nrfjprog",
               "version": "9.4.0"
             },
             {
-              "packager": "adafruit",
+              "packager": "AdafruitUbloxNrf52",
               "name": "CMSIS",
               "version": "5.7.0"
             }
