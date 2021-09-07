@@ -1,6 +1,12 @@
-# Arduino Core for Adafruit Bluefruit nRF52 Boards (u-blox NINA 302)
+# Arduino Core for Adafruit Bluefruit nRF52 u-blox Boards
 
 Based on Adafruit official library and tutorial: https://nina-b302-arduino-adafruit.blogspot.com/2020/04/nina-b302-e-arduino-adafruit.html
+
+## Supported boards
+
+* NINA 302
+
+Contributions are welcome (pull request).
 
 ## Instructions
 
