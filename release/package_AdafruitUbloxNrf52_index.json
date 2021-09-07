@@ -158,8 +158,6 @@
           "boards": [
             {
               "name": "NINA B302"
-            }, {
-              "name": "NINA B112"
             }
           ],
           "toolsDependencies": [
