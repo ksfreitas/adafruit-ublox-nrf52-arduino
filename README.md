@@ -2,6 +2,12 @@
 
 Based on Adafruit official library and tutorial: https://nina-b302-arduino-adafruit.blogspot.com/2020/04/nina-b302-e-arduino-adafruit.html
 
+## Tutorial - PT BR
+
+Bootloader Install: https://danilodene.blogspot.com/2021/09/ublox-nina-b302-arduino-nrf52840_2.html
+Firmware Upload: https://danilodene.blogspot.com/2021/09/ublox-nina-b302-arduino-nrf52840.html
+
+
 ## Currently supported boards
 
 * NINA 302
